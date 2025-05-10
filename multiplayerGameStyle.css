@@ -1,0 +1,160 @@
+body {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+*{
+    font-family: "Righteous", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#north{
+    width: 100%;
+    height: 20%;
+}
+
+#logoDiv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+#logo{
+    width: 75px;
+    height: 75px;
+}
+
+#scoreBar{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nameP1{
+    width: 20%;
+}
+
+#nameP2{
+    width: 20%;
+}
+
+#timer{
+    width: 20%;
+}
+
+#pfp1{
+    width: 10%;
+}
+
+#pfp2{
+    width: 10%;
+}
+
+#point1{
+    width: 10%;
+}
+
+#point2{
+    width: 10%;
+}
+
+#pitch{
+    border-top: 5px solid white;
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+#pitchP1{
+    /*background-image: url(images/organic_square.png);*/
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-right: 5px solid white;
+}
+
+#pitchP2{
+    /*background-image: url(images/plastic_square.png);*/
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-left: 5px solid white;
+}
+
+/* Stile della schermata di vittoria */
+#victoryScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Contenitore per logo e testo */
+#victoryContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo del vincitore */
+#winnerLogo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    animation: expandLogo 1s ease-out forwards;
+}
+
+/* Testo del vincitore */
+#winnerText {
+    color: white;
+    font-size: 50px;
+    margin-top: 20px;
+}
+
+@keyframes logoAppear {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes textAppear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body.victory {
+    overflow: hidden;
+}
+
+
+
