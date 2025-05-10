@@ -1,0 +1,141 @@
+body {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+* {
+    font-family: "Righteous", sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#north {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(to right, #566142, #2f425b);
+}
+
+#logoDiv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid white;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+}
+
+#scoreBar {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#playerName, #playerPoints, #timer {
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+}
+
+#playerLogo img {
+    width: 85px;
+    height: 85px;
+}
+
+#pitch {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+/* Stile della schermata di vittoria */
+#victoryScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+#victoryContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#winnerLogo {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    animation: logoAppear 0.8s ease-out forwards;
+}
+
+#winnerText {
+    font-size: 50px;
+    margin-bottom: 20px;
+    animation: textAppear 0.5s ease-out 0.3s forwards;
+}
+
+#finalScore {
+    font-size: 30px;
+    margin-bottom: 30px;
+    animation: textAppear 0.5s ease-out 0.5s forwards;
+}
+
+#backButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    animation: textAppear 0.5s ease-out 0.7s forwards;
+    transition: all 0.3s ease;
+}
+
+#backButton:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+@keyframes logoAppear {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes textAppear {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

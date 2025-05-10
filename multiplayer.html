@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage | Multi player</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="icon" href="images/game_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="logoDiv">
+            <a href="index.html">
+                <img id="logo" src="images/game_logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div id="halfContainer">
+            <div class="halfDiv">
+                <div class="nameDiv">
+                    <input class="nameInput" id="input1" type="text" placeholder="INSERISCI NOME">
+                </div>
+    
+                <div class="teamDiv">
+                    <button class="buttonArrow" onclick="prevImage(0)">
+                        <img class="arrows" src="images/leftArrow.png" alt="freccia">
+                    </button>
+        
+                    <img class="teamLogo" src="images/organic_logo.png" alt="team">
+        
+                    <button class="buttonArrow" onclick="nextImage(0)">
+                        <img class="arrows" src="images/rightArrow.png" alt="freccia">
+                    </button>
+                </div>
+    
+                <div class="playButton">
+                    <button class="buttons" id="buttonReady1" onclick="getReady(0)">PRONTO</button>
+                </div>
+            </div>
+
+            <div class="halfDiv">
+                <div class="nameDiv">
+                    <input class="nameInput" id="input2" type="text" placeholder="INSERISCI NOME">
+                </div>
+    
+                <div class="teamDiv">
+                    <button class="buttonArrow" onclick="prevImage(1)">
+                        <img class="arrows" src="images/leftArrow.png" alt="freccia">
+                    </button>
+        
+                    <img class="teamLogo" src="images/organic_logo.png" alt="team">
+        
+                    <button class="buttonArrow" onclick="nextImage(1)">
+                        <img class="arrows" src="images/rightArrow.png" alt="freccia">
+                    </button>
+                </div>
+    
+                <div class="playButton">
+                    <button class="buttons" id="buttonReady2" onclick="getReady(1)">PRONTO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

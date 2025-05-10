@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage | Single player</title>
+    <link rel="stylesheet" href="indexStyle.css">
+    <link rel="icon" href="images/game_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="scriptSinglePlayer.js" defer></script>
+</head>
+<body> 
+    <div class="container">
+        <div class="logoDiv">
+            <a href="index.html">
+                <img id="logo" src="images/game_logo.png" alt="logo">
+            </a>
+        </div>
+
+        <div class="elements">
+            <div id="nameDiv">
+                <input class="nameInput" id="playerInput" type="text" placeholder="INSERISCI NOME">
+            </div>
+
+            <div class="teamDiv">
+                <button class="buttonArrow" onclick="prevImage()">
+                    <img class="arrows" src="images/leftArrow.png" alt="freccia">
+                </button>
+    
+                <img class="teamLogo" id="teamLogo" src="images/organic_logo.png" alt="team">
+    
+                <button class="buttonArrow" onclick="nextImage()">
+                    <img class="arrows" src="images/rightArrow.png" alt="freccia">
+                </button>
+            </div>
+
+            <div class="playButton">
+                <button class="buttons" id="playButton" onclick="startGame()">GIOCA</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
